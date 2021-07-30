@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="mainpage.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.category').mouseenter(function() {
+                    $(this).addClass('mouse');
+                    $(this).removeClass('mousenone');
+                });
+                $('.category').mouseleave(function() {
+                    $(this).addClass('mousenone');
+                    $(this).removeClass('mouse');
+                });
+                $('.category.click').click(function() {
+                    $(this).toggleClass('selection');
+                })
+            });
+      </script>
+    </head>
+<body>
+    <header class='image'>
+        <div class="welcome">
+            <div class="logo">
+            </div>
+        </div>
+        <div class="navigation navposition">
+            <a href="#foreign">Иностранные языки</a>
+            <a href="#apps">Компьютерные программы</a>
+            <a href="#music">Музыкальные инструменты</a>
+            <a href="#sports">Занятия спортом</a>
+            <a href="#school">Школьная программа</a>
+            <a href="#cooking">Кулинарное мастерство</a>
+            <a href="#law">Юридическая грамотность</a>
+            <a href="#finance">Финансовая грамотность</a>
+            <a href="#trade">Биржевые операции</a>
+            <a href="#robots">Робототехника</a>
+            <a href="#games">Киберспорт</a>
+            <a href="#other">Другое</a>
+        </div>
+    </header>
+    <div class="intro">
+        <p class="intro_text"></p>
+    </div>
+    <div class="main">
+        <div class="main_content">
+            <div class="first column">
+                <a class="anchor" name="foreign"></a>
+                <div class="category click">
+                    <div class="foreign image circle"></div>
+                    <p class="text">Иностранные языки</p>
+                    <div class="select_course hide">
+                        <a class="course text hide" href="english.html">Английский язык</a>
+                        <a class="course text hide" href="#">Китайский язык</a>
+                        <a class="course text hide" href="#">Французский язык</a>
+                        <a class="course text hide" href="#">Испанский язык</a>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <a class="anchor" name="sports"></a>
+                <div class="category click">
+                    <div class="sports image circle"></div>
+                    <p class="text">Занятия спортом</p>
+                    <div class="select_course hide">
+                        <a class="course text hide" href="#">Плавание</a>
+                        <a class="course text hide" href="#">Легкая атлетика</a>
+                        <a class="course text hide" href="#">Велоспорт</a>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <a class="anchor" name="law"></a>
+                <a class="category">
+                    <div class="law image circle"></div>
+                    <p class="text">Юридическая грамотность</p>
+                </a>
+                <div class="after"></div>
+                <a class="anchor" name="robots"></a>
+                <a class="category">
+                    <div class="robots image circle"></div>
+                    <p class="text">Робототехника</p>
+                </a>
+            </div>
+            <div class="second column">
+                <a class="anchor" name="apps"></a>
+                <div class="category click">
+                    <div class="apps image circle"></div>
+                    <p class="text">Компьютерные программы</p>
+                    <div class="select_course hide">
+                        <a class="course text hide" href="#">Обработка фото</a>
+                        <a class="course text hide" href="#">Обработка видео</a>
+                        <a class="course text hide" href="#">Обработка и создание музыки</a>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <a class="anchor" name="school"></a>
+                <div class="category click">
+                    <div class="school image circle"></div>
+                    <p class="text">Школьная программа</p>
+                    <div class="select_course hide">
+                        <a class="course text hide" href="#">Математика</a>
+                        <a class="course text hide" href="#">Физика</a>
+                        <a class="course text hide" href="#">История</a>
+                        <a class="course text hide" href="#">Обществознание</a>
+                        <a class="course text hide" href="#">Биология</a>
+                        <a class="course text hide" href="#">Химия</a>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <a class="anchor" name="finance"></a>
+                <a class="category">
+                    <div class="finance image circle"></div>
+                    <p class="text">Финансовая грамотность</p>
+                </a>
+                <div class="after"></div>
+                <a class="anchor" name="games"></a>
+                <a class="category">
+                    <div class="games image circle"></div>
+                    <p class="text">Киберспорт</p>
+                </a>
+            </div>
+            <div class="third column">
+                <a class="anchor" name="music"></a>
+                <div class="category click">
+                    <div class="music image circle"></div>
+                    <p class="text">Музыкальные инструменты</p>
+                    <div class="select_course hide">
+                        <a class="course text hide" href="#">Гитара</a>
+                        <a class="course text hide" href="#">Пианино</a>
+                        <a class="course text hide" href="#">Барабаны</a>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <a class="anchor" name="cooking"></a>
+                <a class="category">
+                    <div class="cooking image circle"></div>
+                    <p class="text">Кулинарное мастерство</p>
+                </a>
+                <div class="after"></div>
+                <a class="anchor" name="trade"></a>
+                <a class="category">
+                    <div class="trade image circle"></div>
+                    <p class="text">Биржевые операции</p>
+                </a>
+                <div class="after"></div>
+                <a class="anchor" name="other"></a>
+                <a class="category">
+                    <div class="other image circle"></div>
+                    <p class="text">Другое</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
